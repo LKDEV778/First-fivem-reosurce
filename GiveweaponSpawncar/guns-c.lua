@@ -33,4 +33,5 @@ RegisterCommand('spawnveh', function(src, args)
     end
     local car = CreateVehicle(GetHashKey(args[1]), pCoords, pHeading, true, false)
     TaskWarpPedIntoVehicle(Player, car, -1)
+    notify("~p~Spawn vehicle: " .. args[1])
 end)
